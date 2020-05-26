@@ -1,0 +1,17 @@
+package com.laptop.laptopbag.exception;
+
+public class InvalIdException extends RuntimeException {
+	private static final long serialVersionUID = 1L;
+	private String exceptionMessage;
+
+	public String getExceptionMessage() {
+		return exceptionMessage;
+	}
+
+	public InvalIdException(String exceptionMessage) {
+		this.exceptionMessage = exceptionMessage;
+	}
+	
+	public InvalIdException() {
+	}
+}
