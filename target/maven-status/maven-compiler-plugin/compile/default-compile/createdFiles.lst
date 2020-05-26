@@ -1,9 +1,16 @@
 com\laptop\laptopbag\LaptopbagApplication.class
+com\laptop\laptopbag\security\WebSecurityConfig.class
 com\laptop\laptopbag\model\LaptopDetails.class
 com\laptop\laptopbag\model\Features.class
 com\laptop\laptopbag\exception\ExceptionController.class
 com\laptop\laptopbag\interfaces\Ioperation.class
+com\laptop\laptopbag\controller\LaptopDetailController.class
 com\laptop\laptopbag\exception\ErrorMessage.class
 com\laptop\laptopbag\interfaces\LaptopOperation.class
+com\laptop\laptopbag\controller\LaptopDetailDelayController.class
 com\laptop\laptopbag\exception\InvalIdException.class
+com\laptop\laptopbag\controller\LaptopDetailSecureController.class
+com\laptop\laptopbag\doc\SwaggerConfig.class
 com\laptop\laptopbag\exception\LaptopDetailNotFoundException.class
+com\laptop\laptopbag\security\CustomBasicAuthenticationEntryPoint.class
+com\laptop\laptopbag\exception\UnauthorizeException.class
