@@ -5,6 +5,8 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlElement;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Features {
 	private List<String> features;
 
@@ -12,7 +14,8 @@ public class Features {
 		features = new ArrayList<String>();
 	}
 	
-	@XmlElement(name="Feature")
+	//@XmlElement(name="Feature")
+	@JsonProperty("Feature")
 	public List<String> getFeatures() {
 		return features;
 	}

@@ -3,7 +3,11 @@ package com.laptop.laptopbag.model;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
+
 @XmlRootElement(name = "Laptop")
+@JsonRootName("Laptop")
 public class LaptopDetails {
 	private static final long serialVersionUID = 3357278725091907367L;
 
@@ -13,14 +17,16 @@ public class LaptopDetails {
 		return id;
 	}
 
-	@XmlElement(name = "Id")
+	//@XmlElement(name = "Id")
+	@JsonProperty("Id")
 	public void setId(int id) {
 		this.id = id;
 	}
 
 	private String laptopName;
 
-	@XmlElement(name = "LaptopName")
+	//@XmlElement(name = "LaptopName")
+	@JsonProperty("LaptopName")
 	public String getLaptopName() {
 		return laptopName;
 	}
@@ -31,7 +37,8 @@ public class LaptopDetails {
 
 	private String brandName;
 
-	@XmlElement(name = "BrandName")
+	//@XmlElement(name = "BrandName")
+	@JsonProperty("BrandName")
 	public String getBrandName() {
 		return brandName;
 	}
@@ -42,7 +49,8 @@ public class LaptopDetails {
 
 	private Features features;
 
-	@XmlElement(name = "Features")
+	//@XmlElement(name = "Features")
+	@JsonProperty("Features")
 	public Features getFeatures() {
 		return features;
 	}

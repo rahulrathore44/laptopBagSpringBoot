@@ -58,11 +58,12 @@ public class LaptopDetailController {
 		return new ResponseEntity<Object>(data, HttpStatus.OK);
 	}
 
-	@RequestMapping(path = { "/delete/{id}" }, method = RequestMethod.DELETE, produces = { MediaType.TEXT_PLAIN_VALUE })
-	public ResponseEntity<Object> deleteIt(@PathVariable("id") int id) {
+	
+	@RequestMapping(path = { "/delete/{id}" }, method = RequestMethod.DELETE,produces = { MediaType.TEXT_PLAIN_VALUE } )
+	public ResponseEntity<String> deleteIt(@PathVariable("id") int id) {
 		int data = operation.deleteLaptopBag(id);
 		if (data != -1) {
-			return new ResponseEntity<Object>(data, HttpStatus.OK);
+			return new ResponseEntity<String>((new Integer(data)).toString(), HttpStatus.OK);
 		}
 		throw new LaptopDetailNotFoundException(String.format("Laptop Detail with %s Not found", id));
 	}
@@ -79,8 +80,8 @@ public class LaptopDetailController {
 	}
 
 	@RequestMapping(path = { "/ping/{message}" }, method = RequestMethod.GET, produces = { MediaType.TEXT_PLAIN_VALUE })
-	public ResponseEntity<Object> pingAlive(@PathVariable("message") String text) {
-		return new ResponseEntity<Object>(String.format("%1s %2s", "Hi!", text), HttpStatus.OK);
+	public ResponseEntity<String> pingAlive(@PathVariable("message") String text) {
+		return new ResponseEntity<String>(String.format("%1s %2s", "Hi!", text), HttpStatus.OK);
 	}
 
 	@RequestMapping(path = { "/query" }, method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE,

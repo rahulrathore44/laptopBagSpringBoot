@@ -70,11 +70,11 @@ public class LaptopDetailDelayController {
 	}
 
 	@RequestMapping(path = { "/delete/{id}" }, method = RequestMethod.DELETE, produces = { MediaType.TEXT_PLAIN_VALUE })
-	public ResponseEntity<Object> deleteIt(@PathVariable("id") int id) {
+	public ResponseEntity<String> deleteIt(@PathVariable("id") int id) {
 		generateDelay(15);
 		int data = operation.deleteLaptopBag(id);
 		if (data != -1) {
-			return new ResponseEntity<Object>(data, HttpStatus.OK);
+			return new ResponseEntity<String>((new Integer(data)).toString(), HttpStatus.OK);
 		}
 		throw new LaptopDetailNotFoundException(String.format("Laptop Detail with %s Not found", id));
 	}

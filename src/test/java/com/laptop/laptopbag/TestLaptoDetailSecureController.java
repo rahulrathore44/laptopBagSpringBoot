@@ -41,7 +41,7 @@ public class TestLaptoDetailSecureController {
 	public void test_Get_all_end_point_with_json_data() throws Exception {
 		mvc.perform(get(contextPath + "/all").headers(getBasicAuthHeader()).contentType(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk()).andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-				.andExpect(jsonPath("$[0].id", is(1)));
+				.andExpect(jsonPath("$[0].Id", is(1)));
 	}
 	
 }
