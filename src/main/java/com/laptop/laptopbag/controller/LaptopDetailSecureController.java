@@ -19,6 +19,9 @@ import com.laptop.laptopbag.interfaces.Ioperation;
 import com.laptop.laptopbag.interfaces.LaptopOperation;
 import com.laptop.laptopbag.model.LaptopDetails;
 
+import io.swagger.annotations.Api;
+
+@Api(value = "Laptop Bag Secure", description = "End Point for Laptop Bag Application secure by Basic Auth")
 @RestController
 @RequestMapping(path = { "/laptop-bag/webapi/secure" })
 public class LaptopDetailSecureController {

@@ -1,6 +1,4 @@
-com\laptop\laptopbag\controller\MyResource.class
 com\laptop\laptopbag\LaptopbagApplication.class
-com\laptop\laptopbag\controller\App.class
 com\laptop\laptopbag\model\LaptopDetails.class
 com\laptop\laptopbag\model\Features.class
 com\laptop\laptopbag\exception\ExceptionController.class

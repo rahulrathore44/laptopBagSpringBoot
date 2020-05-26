@@ -19,6 +19,9 @@ import com.laptop.laptopbag.interfaces.Ioperation;
 import com.laptop.laptopbag.interfaces.LaptopOperation;
 import com.laptop.laptopbag.model.LaptopDetails;
 
+import io.swagger.annotations.Api;
+
+@Api(value = "Laptop Bag", description = "End Point for Laptop Bag Application")
 @RestController
 @RequestMapping(path = { "/laptop-bag/webapi/api" })
 public class LaptopDetailController {
