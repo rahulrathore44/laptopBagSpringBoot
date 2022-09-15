@@ -1,4 +1,4 @@
-package com.laptop.laptopbag;
+package com.laptop.laptopbag.get;
 
 import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
