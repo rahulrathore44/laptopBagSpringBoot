@@ -26,3 +26,4 @@ hs_err_pid*
 /target/maven-archiver/
 target/surefire-reports/
 target/maven-status/
+target/classes/
