@@ -26,11 +26,12 @@ public class LaptopDetails {
 	private String laptopName;
 
 	//@XmlElement(name = "LaptopName")
-	@JsonProperty("LaptopName")
+	
 	public String getLaptopName() {
 		return laptopName;
 	}
 
+	@JsonProperty("LaptopName")
 	public void setLaptopName(String laptopName) {
 		this.laptopName = laptopName;
 	}
