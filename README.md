@@ -29,7 +29,7 @@ Run the following command to build and package the application (**jar**).
 
 ## Docker image
 
-Run the following command to build the image and tags it as `jersey/laptop-bag`.
+Run the following command to build the image and tags it as `spring-io/laptop-bag`.
 
 `mvn package`
 
@@ -37,7 +37,7 @@ Run the following command to build the image and tags it as `jersey/laptop-bag`.
 
 Run the container using the image 
 
-`docker run -d -p <application-port>:<expose-port> jersey/laptop-bag`
+`docker run -d -p <application-port>:<expose-port> spring-io/laptop-bag`
 
 Example: `docker run -d -p 9191:9191 spring-io/laptop-bag`
 
