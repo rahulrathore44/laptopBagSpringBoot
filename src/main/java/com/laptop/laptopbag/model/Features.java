@@ -3,8 +3,6 @@ package com.laptop.laptopbag.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlElement;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Features {
@@ -13,8 +11,8 @@ public class Features {
 	public Features() {
 		feature = new ArrayList<String>();
 	}
-	
-	//@XmlElement(name="Feature")
+
+	// @XmlElement(name="Feature")
 	@JsonProperty("Feature")
 	public List<String> getFeatures() {
 		return feature;

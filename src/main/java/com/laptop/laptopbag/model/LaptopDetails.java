@@ -1,9 +1,9 @@
 package com.laptop.laptopbag.model;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
+
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "Laptop")
 @JsonRootName("Laptop")

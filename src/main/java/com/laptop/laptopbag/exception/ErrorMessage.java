@@ -1,9 +1,9 @@
 package com.laptop.laptopbag.exception;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
 import org.springframework.http.HttpStatus;
+
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class ErrorMessage {
@@ -28,10 +28,10 @@ public class ErrorMessage {
 	}
 
 	private HttpStatus errorCode;
-	
+
 	public ErrorMessage() {
 	}
-	
+
 	public ErrorMessage(HttpStatus statusCode, String errorMessge) {
 		this.errorCode = statusCode;
 		this.errorMessage = errorMessge;
