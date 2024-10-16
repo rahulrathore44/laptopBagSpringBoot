@@ -27,4 +27,23 @@ Run the following command to build and package the application (**jar**).
 
 [https://www.youtube.com/fluxay44](https://www.youtube.com/fluxay44)
 
+## Docker image
+
+Run the following command to build the image and tags it as `jersey/laptop-bag`.
+
+`mvn package`
+
+`docker build -t spring-io/laptop-bag .`
+
+Run the container using the image 
+
+`docker run -d -p <application-port>:<expose-port> jersey/laptop-bag`
+
+Example: `docker run -d -p 9191:9191 spring-io/laptop-bag`
+
+You can access the application on port **9191**
+
+
+**The application deployed using the Docker container will run only port number 9191.**
+
 
